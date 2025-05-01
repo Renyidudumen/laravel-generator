@@ -1,0 +1,26 @@
+{
+    "name": "19peachess/laravel-generator",
+    "description": "routes.php update.",
+    "keywords": ["dais", "laravel", "model", "migration", "scaffold", "CRUD", "generator"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Bluecode"
+        },
+        {
+            "name": "aaaaaa"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.9",
+        "doctrine/dbal": "^2.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Peaches\\Generator\\": "src"
+        }
+    },
+    "suggest": {
+        "doctrine/dbal": "Required to use generator from existing table."
+    }
+}
