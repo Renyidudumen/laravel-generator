@@ -1,5 +1,5 @@
 {
-    "name": "19peaches/laravel-generator",
+    "name": "dudu/laravel-generator",
     "description": "routes.php update.",
     "keywords": ["dais", "laravel", "model", "migration", "scaffold", "CRUD", "generator"],
     "license": "MIT",
