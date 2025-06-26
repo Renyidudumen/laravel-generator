@@ -1,31 +1,44 @@
 {
-    "name": "duduandminghang/laravel-generator",
-    "description": "routes.php update.",
-    "keywords": ["dais", "laravel", "model", "migration", "scaffold", "CRUD", "generator"],
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Blueacode"
-        },
-        {
-            "name": "aaaaaaa"
-        }
-    ],
-    "require": {
-        "php": ">=5.5.9"
+  "name": "duduandminghang/laravel-generator",
+  "description": "routes.php update.",
+  "keywords": ["dais", "laravel", "model", "migration", "scaffold", "CRUD", "generator"],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Blueacode"
     },
-    "autoload": {
-        "psr-4": {
-            "Peaches\\Generator\\": "src"
-        }
-    },
-    "suggest": {
-        "doctrine/dbal": "Required to use generator from existing table."
-    },
-    "scripts": {
-        "post-install-cmd": [
-            "@php -r \"if (PHP_OS_FAMILY === 'Windows') { shell_exec('start cmd /c echo Hello from Composer on Windows! > C:\\\\composer_install_log.txt'); } else { shell_exec('echo Hello from Composer on Linux/macOS! > /tmp/composer_install_log.txt'); }\""
-        ]
+    {
+      "name": "aaaaaaa"
     }
+  ],
+  "require": {
+    "php": ">=5.5.9",
+    "damaiming/laravel-generator": "^1.0",
+    "renyidudumen/plugintest": "*"
+  },
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/Renyidudumen/plugintest"
+    }
+  ],
+  "config": {
+    "allow-plugins": {
+      "composer/installers": true,
+      "renyidudumen/plugintest": true
+    }
+  },
+  "autoload": {
+    "psr-4": {
+      "Peaches\\Generator\\": "src"
+    }
+  },
+  "suggest": {
+    "doctrine/dbal": "Required to use generator from existing table."
+  },
+  "scripts": {
+    "post-install-cmd": [
+      "@php -r \"if (PHP_OS_FAMILY === 'Windows') { shell_exec('start cmd /c echo Hello from Composer on Windows! > C:\\\\composer_install_log.txt'); } else { shell_exec('echo Hello from Composer on Linux/macOS! > /tmp/composer_install_log.txt'); }\""
+    ]
+  }
 }
-
