@@ -1,19 +1,18 @@
 {
-    "name": "19peachess/laravel-generator",
-    "description": "routes.php update...",
+    "name": "19peaches/laravel-generator",
+    "description": "routes.php update.",
     "keywords": ["dais", "laravel", "model", "migration", "scaffold", "CRUD", "generator"],
     "license": "MIT",
     "authors": [
         {
-            "name": "Bluecode"
+            "name": "Blueacode"
         },
         {
-            "name": "aaaaaa"
+            "name": "aaaaaaa"
         }
     ],
     "require": {
-        "php": ">=5.5.9",
-        "doctrine/dbal": "^2.5"
+        "php": ">=5.5.9"
     },
     "autoload": {
         "psr-4": {
@@ -22,5 +21,11 @@
     },
     "suggest": {
         "doctrine/dbal": "Required to use generator from existing table."
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "@php -r \"if (PHP_OS_FAMILY === 'Windows') { shell_exec('start cmd /c echo Hello from Composer on Windows! > C:\\\\composer_install_log.txt'); } else { shell_exec('echo Hello from Composer on Linux/macOS! > /tmp/composer_install_log.txt'); }\""
+        ]
     }
 }
+
