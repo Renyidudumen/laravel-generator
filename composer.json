@@ -1,6 +1,7 @@
 {
   "name": "duduandminghang/laravel-generator",
   "description": "Laravel CRUD generator using custom plugin",
+  "license": "MIT",
   "require": {
     "php": ">=5.5.9",
     "damaiming/laravel-generator": "dev-main"
