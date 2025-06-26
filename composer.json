@@ -19,7 +19,7 @@
   },
   "config": {
     "allow-plugins": {
-      "renyidudumen/plugintest": true
+      "damaiming/laravel-generator": true
     }
   },
   "minimum-stability": "dev",
