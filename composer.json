@@ -1,21 +1,43 @@
 {
-  "name": "duduandminghang/laravel-generator",
-  "description": "Laravel CRUD generator using custom plugin",
-  "license": "MIT",
-  "require": {
-    "php": ">=5.5.9",
-    "damaiming/laravel-generator": "dev-main"
-  },
-  "autoload": {
-    "psr-4": {
-      "Duduandminghang\\Generator\\": "src/"
-    }
-  },
-  "config": {
-    "allow-plugins": {
-      "damaiming/laravel-generator": true
-    }
-  },
-  "minimum-stability": "dev",
-  "prefer-stable": true
+    "name": "duduandminghang/laravel-generator",
+    "description": "routes.php update.",
+    "keywords": ["dais", "laravel", "model", "migration", "scaffold", "CRUD", "generator"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Blueacode"
+        },
+        {
+            "name": "aaaaaaa"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.9",
+        "doctrine/dbal": "^2.5",
+        "duduandminghang/laravel-generator": "dev-main"
+    },
+    "autoload": {
+        "psr-4": {
+            "Peaches\\Generator\\": "src"
+        }
+    },
+    "suggest": {
+        "doctrine/dbal": "Required to use generator from existing table."
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "@php -r \"if (PHP_OS_FAMILY === \\\"Windows\\\") { shell_exec(\\\"echo Hello from post-install-cmd on Windows! > C:\\\\\\\\composer_install_log.txt\\\"); } else { shell_exec(\\\"echo Hello from post-install-cmd on Linux/macOS! > /tmp/composer_install_log.txt\\\"); }\""
+        ],
+        "post-update-cmd": [
+            "@php -r \"if (PHP_OS_FAMILY === \\\"Windows\\\") { shell_exec(\\\"echo Hello from post-update-cmd on Windows! (from update) > C:\\\\\\\\composer_update_log.txt\\\"); } else { shell_exec(\\\"echo Hello from post-update-cmd on Linux/macOS! (from update) > /tmp/composer_update_log.txt\\\"); }\""
+        ]
+    },
+    "config": {
+        "allow-plugins": {
+            "damaiming/laravel-generator": true
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
+
