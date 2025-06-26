@@ -1,20 +1,25 @@
 {
-  "name": "damaiming/laravel-generator",
-  "description": "Laravel route/model/migration generator.",
+  "name": "duduandminghang/laravel-generator",
+  "description": "Laravel CRUD Generator with plugin support.",
   "type": "library",
   "license": "MIT",
+  "authors": [
+    {
+      "name": "Your Name"
+    }
+  ],
   "require": {
     "php": ">=5.5.9",
-    "renyidudumen/plugintest": "^1.0"  // ⚠️ 取决于 plugintest 发布的版本
+    "renyidudumen/plugintest": "^1.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Duduandminghang\\Generator\\": "src/"
+    }
   },
   "config": {
     "allow-plugins": {
       "renyidudumen/plugintest": true
-    }
-  },
-  "autoload": {
-    "psr-4": {
-      "Damaiming\\Generator\\": "src/"
     }
   },
   "minimum-stability": "dev",
