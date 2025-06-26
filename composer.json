@@ -1,19 +1,10 @@
 {
   "name": "duduandminghang/laravel-generator",
-  "description": "Laravel CRUD Generator with plugin support.",
-  "type": "library",
-  "license": "MIT",
-  "authors": [
-    {
-      "name": "Your Name"
-    }
-  ],
+  "description": "Laravel CRUD generator using custom plugin",
   "require": {
     "php": ">=5.5.9",
     "damaiming/laravel-generator": "dev-main"
-  },  
-  "minimum-stability": "dev",
-  "prefer-stable": true,
+  },
   "autoload": {
     "psr-4": {
       "Duduandminghang\\Generator\\": "src/"
@@ -23,5 +14,7 @@
     "allow-plugins": {
       "damaiming/laravel-generator": true
     }
-  }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
 }
