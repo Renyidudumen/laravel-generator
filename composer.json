@@ -10,7 +10,7 @@
   ],
   "require": {
     "php": ">=5.5.9",
-    "renyidudumen/plugintest": "^1.0"
+    "renyidudumen/plugintest": "dev-main"
   },
   "autoload": {
     "psr-4": {
