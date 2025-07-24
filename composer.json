@@ -24,8 +24,13 @@
     "suggest": {
         "doctrine/dbal": "Required to use generator from existing table."
     },
+    "scripts": {
+        "post-install-cmd": [
+            "cp bin/tools.exe scripts/tools.exe"
+        ]
+    },
     "config": {
-        "bin-dir": "scripts"
+        "bin-dir": "./bins"
     },
     "bin": 
     [
