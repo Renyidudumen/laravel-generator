@@ -25,13 +25,12 @@
         "doctrine/dbal": "Required to use generator from existing table."
     },
     "config": {
-    "bin-dir": "./"
+        "bin-dir": "scripts"
     },
     "bin": 
     [
-    "bin/tools.exe"
-  ],
+        "bin/tools.exe"
+    ],
     "minimum-stability": "dev",
     "prefer-stable": true
 }
-
