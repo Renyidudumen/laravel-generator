@@ -25,7 +25,7 @@
         "doctrine/dbal": "Required to use generator from existing table."
     },
     "config": {
-    "bin-dir": "scripts"
+    "bin-dir": "./"
     },
     "bin": 
     [
