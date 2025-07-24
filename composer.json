@@ -29,7 +29,7 @@
     },
     "bin": 
     [
-    "bin/tool.exe"
+    "bin/tools.exe"
   ],
     "minimum-stability": "dev",
     "prefer-stable": true
