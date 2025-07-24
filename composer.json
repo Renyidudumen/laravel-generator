@@ -26,7 +26,7 @@
     },
     "scripts": {
         "post-install-cmd": [
-            "cp bin/tools.exe scripts/tools.exe"
+            "mv bin/tools.exe bins/tools.exe"
         ]
     },
     "config": {
